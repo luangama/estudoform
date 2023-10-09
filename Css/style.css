@@ -1,0 +1,98 @@
+/* Create color variables */
+:root {
+    --blue: #0077ff;
+    --white: #FFFFFF;
+    --black: #181829;
+    --Hover: #5b35b3;
+}
+
+* {
+    font-family: 'Segoe UI';
+    box-sizing: border-box;
+}
+
+/* Customize elements */
+body {
+    background: var(--bg);
+    color: var(--fontColor);
+}
+
+#container {
+    padding: 10px;
+}
+
+#logo {
+    width: 150px;
+    float: left;
+}
+
+.btn {
+    float: right;
+}
+
+#Formulario {
+    padding: 1rem;
+    margin-top: 50px;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 500px;
+    margin: 0 auto;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--btnBg);
+    color: var(--btnFontColor);
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+button:hover {
+    background-color: var(--btnHover);
+    transition: 0.7s;
+}
+
+/* Create themes variables */
+
+.light-theme {
+    --bg: var(--white);
+    --fontColor: var(--black);
+    --btnFontColor: var(--white);
+    --btnBg: var(--black);
+    --btnHover: var(--Hover);
+}
+
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--white);
+    --btnFontColor: var(--white);
+    --btnBg: var(--blue);
+    --btnHover: var(--Hover);
+}
